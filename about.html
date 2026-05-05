@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("about.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ 
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #2E8B57;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 100px; 
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-style: italic;
+  color: #F1EDE5;
+}
+
+button {
+  border: none;
+  margin: 15px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2E8B57;
+  color: white;
+}
+
+h1, h2 {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="resources.html">Resources</a>
+</nav>
+
+<div class="container">
+  <h1>About Us</h1>
+  <h3>“Together for a sustainable future.”</h3>
+
+  <section>
+    <h2>Our Mission</h2>
+    <p>We aim to inspire individuals and communities to take meaningful action toward environmental protection and sustainable living.</p>
+  </section>
+
+  <section>
+    <h2>Our Vision</h2>
+    <p>We envision a world where people live in harmony with nature through education, awareness, and innovation.</p>
+  </section>
+
+  <section>
+    <h2>Our Values</h2>
+    <p>Integrity, Collaboration, Sustainability, and Education guide everything we do.</p>
+  </section>
+
+  <section>
+    <h2>Our Team</h2>
+    <p>We are a passionate group of environmental advocates, educators, and creators working together to make a lasting impact.</p>
+  </section>
+
+
+  <button onclick="document.getElementById('popup').style.display='block'">
+  Learn More
+</button>
+
+<div id="popup" style="display:none; background:rgba(0,0,0,0.8); color:white; padding:20px;">
+  <h2>More About Us</h2>
+  <p>We organize clean-up drives, tree planting, and awareness campaigns.</p>
+  <button onclick="document.getElementById('popup').style.display='none'">Close</button>
+</div>
+
+</div>
+
+</body>
+</html>
